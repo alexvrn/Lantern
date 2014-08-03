@@ -25,8 +25,6 @@ public:
     bool openConnect(QString host, quint16 port);
     void closeConnect();
 
-    bool isConnected() const;
-
 private:
     void nullInit();
 

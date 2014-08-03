@@ -70,11 +70,6 @@ void ServiceClient::sltDisconnected()
     nullInit();
 }
 
-bool ServiceClient::isConnected() const
-{
-    return socket->state() == QAbstractSocket::ConnectedState;
-}
-
 void ServiceClient::reportError(QAbstractSocket::SocketError ErrCode)
 {
     qDebug() << "SOCKET ERROR=" << ErrCode;
